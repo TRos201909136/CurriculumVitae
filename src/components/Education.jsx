@@ -51,14 +51,18 @@ const Education = () => {
     return (
         <div
             style={{
-                margin: 10
+                margin: 10,
+                height: 185,
+                overflowY: "scroll",
+                // borderColor: "#08474A",
+                // borderBottomWidth: 10
             }}
         >
-            <div
+            <div className="title"
                 style={{
                     fontWeight: 400,
-                    fontSize: "24pt",
-                    marginLeft: 37
+                    fontSize: "20pt",
+                    marginLeft: 37,
                 }}
             >
                 Education
@@ -70,7 +74,7 @@ const Education = () => {
                             style={{
                                 display: "flex",
                                 flexDirection: "row",
-                                marginBottom: 10
+                                marginBottom: 2
                             }}
                         >
                             <div id="dates"
@@ -81,7 +85,7 @@ const Education = () => {
                                     alignItems: "center",
                                     marginTop: 6,
                                     fontWeight: 400,
-                                    fontSize: "12pt"
+                                    fontSize: "11pt"
                                 }}
                             >
                                 {e.date.map((period) => {
@@ -100,12 +104,12 @@ const Education = () => {
                             <div id="school and diplomas">
                                 <div id="school - city"
                                     style={{
-                                        // marginBottom: 10
+                                        marginBottom: -2
                                     }}
                                 >
                                     <span
                                         style={{
-                                            fontSize: "14pt",
+                                            fontSize: "13pt",
                                             fontWeight: 600,
                                         }}
                                     >
@@ -114,7 +118,7 @@ const Education = () => {
                                     {" - "}
                                     <span
                                         style={{
-                                            fontSize: "12pt",
+                                            fontSize: "11pt",
                                             fontWeight: 500
                                         }}
                                     >
@@ -129,7 +133,7 @@ const Education = () => {
                                                     style={{
                                                         fontStyle: "italic",
                                                         fontWeight: 400,
-                                                        fontSize: "12pt"
+                                                        fontSize: "11pt"
                                                     }}
                                                 >
                                                     {content.diploma}
@@ -137,7 +141,7 @@ const Education = () => {
                                                 <span
                                                     style={{
                                                         fontWeight: 300,
-                                                        fontSize: "12pt"
+                                                        fontSize: "11pt"
                                                     }}
                                                 >
                                                     {content.comments}

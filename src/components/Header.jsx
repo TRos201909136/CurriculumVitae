@@ -1,8 +1,8 @@
 const Header = () => {
     return (
         <div style = {{
-            backgroundColor: "yellow",
-            height: 136,
+            backgroundColor: "#08474A",
+            height: 115,
             width: "100%",
         }}>
             Header
