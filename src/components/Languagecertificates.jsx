@@ -1,4 +1,4 @@
-import {Row} from "antd";
+import {Row,Divider} from "antd";
 
 const data = [
     {
@@ -69,15 +69,19 @@ const Languagecertificates = () => {
         <div
             style={{
                 overflowY: "scroll",
-                height: 194,
-                margin: 10
+                height: 171,
+                margin: 10,
+                paddingLeft: 20,
+                paddingRight: 20, 
             }}
         >
             <div
                 style={{
                     fontWeight: 400,
-                    fontSize: "16pt",
-                    marginLeft: 37
+                    fontSize: "15pt",
+                    marginLeft: 37,
+                    marginBottom: -8,
+                    marginTop: -5
                 }}
             >
                 Certificates
@@ -98,7 +102,7 @@ const Languagecertificates = () => {
                                 display: "flex",
                                 flexDirection: "column",
                             }}
-                        >
+                        >   
                             <div id="language certificates">
                                 <div id="language"
                                     style={{
@@ -123,6 +127,7 @@ const Languagecertificates = () => {
                                                     <div
                                                         style={{
                                                             width: 245,
+                                                            lineHeight: 1.2,
                                                         }}>
                                                         <span
                                                             style={{
@@ -156,11 +161,12 @@ const Languagecertificates = () => {
                                                     </div>
                                                 )
                                             })}
+                                            <Divider type="vertical"/>
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                     )
                 })
             }

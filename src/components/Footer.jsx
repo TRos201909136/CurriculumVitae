@@ -14,7 +14,7 @@ const data = [
         contact: "+33602394383",
     },
     {
-        contact: "GitHub",
+        contact: "GitHub: TiphaineRos",
     },
 ]
 
@@ -53,9 +53,9 @@ const Footer = () => {
                                 >
                                     <span
                                         style={{
-                                            fontSize: "11pt",
+                                            fontSize: "10pt",
                                             fontWeight: 500,
-                                            marginLeft: 50,
+                                            marginLeft: 40,
                                             color: "#ffffff",
                                         }}
                                     >
@@ -63,9 +63,9 @@ const Footer = () => {
                                     </span>
                                     <div
                                         style={{
-                                            fontSize: "11pt",
+                                            fontSize: "10pt",
                                             fontWeight: 500,
-                                            marginLeft: 50,
+                                            marginLeft: 40,
                                             color: "#ffffff",
                                         }}
                                     >

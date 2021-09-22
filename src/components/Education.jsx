@@ -51,8 +51,10 @@ const Education = () => {
     return (
         <div
             style={{
-                margin: 10,
-                height: 185,
+                marginLeft: 10,
+                paddingLeft: 20,
+                paddingRight: 20, 
+                height: 180,
                 overflowY: "scroll",
                 // borderColor: "#08474A",
                 // borderBottomWidth: 10
@@ -63,6 +65,7 @@ const Education = () => {
                     fontWeight: 400,
                     fontSize: "20pt",
                     marginLeft: 37,
+                    marginTop: -2
                 }}
             >
                 Education
@@ -104,7 +107,7 @@ const Education = () => {
                             <div id="school and diplomas">
                                 <div id="school - city"
                                     style={{
-                                        marginBottom: -2
+                                        marginBottom: -6
                                     }}
                                 >
                                     <span
@@ -128,12 +131,15 @@ const Education = () => {
                                 <div id="diploma: comments">
                                     {e.content.map((content) => {
                                         return (
-                                            <div>
+                                            <div
+                                                style ={{
+                                                    marginBottom: -5,
+                                                }}>
                                                 <span
                                                     style={{
                                                         fontStyle: "italic",
                                                         fontWeight: 400,
-                                                        fontSize: "11pt"
+                                                        fontSize: "11pt",
                                                     }}
                                                 >
                                                     {content.diploma}

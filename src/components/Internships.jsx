@@ -20,7 +20,7 @@ const data = [
     },
     {
         date: [
-            "April 2020"
+            "Apr 2020"
         ],
         company: "JP Morgan",
         companytype: "Investment Bank",
@@ -56,7 +56,7 @@ const data = [
         typeofinternship: "Observation internship",
         content: [
             {
-                firstcomment: "Lorem Ipsum",
+                firstcomment: "Observed different sector of the hotel industry and wrote a report about the internship",
             }
         ]
     },
@@ -70,14 +70,17 @@ const Internships = () => {
                 marginRight: 10,
                 marginTop: 2,
                 overflowY: "scroll",
-                height: 224
+                height: 220,
+                paddingLeft: 20,
+                paddingRight: 20, 
             }}
         >
             <div className="title"
                 style={{
                     fontWeight: 400,
                     fontSize: "20pt",
-                    marginLeft: 37
+                    marginLeft: 37,
+                    marginTop: -5
                 }}
             >
                 Internships
@@ -89,7 +92,7 @@ const Internships = () => {
                             style={{
                                 display: "flex",
                                 flexDirection: "row",
-                                marginBottom: 2
+                                marginBottom: -3
                             }}
                         >
                             <div id="dates"
@@ -119,7 +122,7 @@ const Internships = () => {
                             <div id="school and diplomas">
                                 <div id="company - city"
                                     style={{
-                                        marginBottom: -2
+                                        marginBottom: -6
                                     }}
                                 >
                                     <span
@@ -166,7 +169,8 @@ const Internships = () => {
                                                 <span
                                                     style={{
                                                         fontWeight: 400,
-                                                        fontSize: "11pt"
+                                                        fontSize: "11pt",
+                                                        lineHeight: 0.1,
                                                     }}
                                                 >
                                                     {content.firstcomment}
