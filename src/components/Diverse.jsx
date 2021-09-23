@@ -57,7 +57,7 @@ const role = [
             },
             {
                 activity: "Class Representative",
-                comment: "Lorem ipsum",
+                comment: "Elected by my class to represent them in front of the school directors and teachers",
             },
         ]
     },
@@ -84,15 +84,26 @@ const Diverse = () => {
     return (
         <div
             style={{
-                overflowY: "scroll",
+                overflowX: "scroll",
                 height: 335,
+                marginLeft: 10,
+                marginRight: 10,
             }}
         >
+            <Divider 
+            style ={{
+                backgroundColor: "#08474A",
+                marginBottom: 1,
+                marginTop: 0,
+                marginLeft: 20,
+                paddingRight: 10
+            }}
+            />
             <div className="title"
                 style={{
                     fontWeight: 400,
                     fontSize: "20pt",
-                    marginLeft: 37
+                    marginLeft: 70
                 }}
             >
                 Diverse

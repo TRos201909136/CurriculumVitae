@@ -1,3 +1,5 @@
+import {Divider} from "antd";
+
 const data = [
     {
         date: [
@@ -56,7 +58,7 @@ const data = [
         typeofinternship: "Observation internship",
         content: [
             {
-                firstcomment: "Observed different sector of the hotel industry and wrote a report about the internship",
+                firstcomment: "Observed different sectors of the hotel industry and wrote a report about the hotel and the internship",
             }
         ]
     },
@@ -64,23 +66,30 @@ const data = [
 const Internships = () => {
     return (
         <div 
-            style={{
-                marginBottom: 10,
-                marginLeft: 10,
-                marginRight: 10,
-                marginTop: 2,
-                overflowY: "scroll",
-                height: 220,
-                paddingLeft: 20,
-                paddingRight: 20, 
-            }}
+        style={{
+            marginBottom: 10,
+            marginLeft: 10,
+            marginRight: 10,
+            marginTop: 2,
+            overflowY: "scroll",
+            height: 220,
+            paddingLeft: 20,
+            paddingRight: 20, 
+        }}
         >
+        <Divider 
+            style ={{
+                backgroundColor: "#08474A",
+                marginBottom: 1,
+                marginTop: 0
+            }}
+            />
             <div className="title"
                 style={{
                     fontWeight: 400,
                     fontSize: "20pt",
                     marginLeft: 37,
-                    marginTop: -5
+                    marginTop: -3
                 }}
             >
                 Internships
@@ -187,4 +196,11 @@ const Internships = () => {
         </div>
     )
 };
+<Divider 
+style ={{
+    backgroundColor: "#08474A",
+    marginBottom: 1,
+    marginTop: 0
+}}
+/>
 export default Internships;

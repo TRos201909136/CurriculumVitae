@@ -90,7 +90,7 @@ const Languagecertificates = () => {
                 style ={{
                     display: "flex",
                     flexDirection: "row",
-                    marginLeft: 40,
+                    paddingLeft: 25,
                 }}
             >
             {
@@ -101,6 +101,7 @@ const Languagecertificates = () => {
                             style={{
                                 display: "flex",
                                 flexDirection: "column",
+                                marginRight: 6,
                             }}
                         >   
                             <div id="language certificates">
@@ -161,7 +162,6 @@ const Languagecertificates = () => {
                                                     </div>
                                                 )
                                             })}
-                                            <Divider type="vertical"/>
                                         </span>
                                     </div>
                                 </div>
@@ -174,4 +174,5 @@ const Languagecertificates = () => {
         </div>
     )
 };
+<Divider type="vertical"/>
 export default Languagecertificates;
